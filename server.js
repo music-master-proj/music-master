@@ -4,12 +4,12 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
+
+
+
+
 const morgan = require('morgan');
 app.use(morgan("dev"));
-
-// for POST 
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
 
 
 //CORS
@@ -39,5 +39,6 @@ app.use((req, res, next) => {
         }
     })
   });
+
 
   app.listen(port, () => { console.log(`Listening on port ${port}...`) });
