@@ -55,15 +55,7 @@ exports.playlistsController = {
             image
         });
 
-            const name = req.body.name;
-             let options = {
-                method: 'GET',
-                url: `${config.URL_ID}/${name}`,
-            headers: {
-                'x-rapidapi-key': constants.X_KEY,
-                'x-rapidapi-host': constants.X_HOST
-            }
-
+      
         playlist.save().then(() => {
             res.status(200).json({
                 message: 'Create a new playlist'

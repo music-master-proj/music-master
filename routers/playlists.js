@@ -6,7 +6,6 @@ playlistsRouter
     .get('/', playlistsController.getAllPlaylists)
     .get('/:playlistId', playlistsController.getOnePlaylist)
     .post('/', playlistsController.createPlaylist)
-    // .post('/', playlistsController)
     .post('/',playlistsController.madeForYouPlaylist)
     .put('/:playlistId', playlistsController.updatePlaylist)
     .delete('/:playlistId', playlistsController.deletePlaylist);
