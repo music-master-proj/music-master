@@ -1,13 +1,11 @@
-
 //Create server
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const router = express.Router();
 
-// const playlistsRouter = require('./routers/playlists');
-// // const usersRouter = require('./routers/users');
+ const { playlistsRouter } = require('./routers/playlists');
+ const { usersRouter } = require('./routers/users');
 
 
 app.use(express.json());
@@ -15,9 +13,9 @@ app.use(express.urlencoded({
   extended: false
 }));
 
-//Routers
-// router.get('/routers/playlists' , playlistsRouter );
-// // app.use('/users' , usersRouter);
+ //Routers
+app.use('/playlists' , playlistsRouter );
+app.use('/users' , usersRouter);
 
 
 //CORS

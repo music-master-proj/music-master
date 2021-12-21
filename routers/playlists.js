@@ -4,9 +4,10 @@ const { playlistsController } = require('../controllers/playlists');
 
 playlistsRouter
     .get('/', playlistsController.getAllPlaylists)
-    .get('/:id', playlistsController.getOnePlaylist)
+    .get('/:playlistId', playlistsController.getOnePlaylist)
     .post('/', playlistsController.createPlaylist)
-    .put('/:id', playlistsController.updatePlaylist)
-    .delete('/:id', playlistsController.deletePlaylist);
+    .post('/',playlistsController.madeForYouPlaylist)
+    .put('/:playlistId', playlistsController.updatePlaylist)
+    .delete('/:playlistId', playlistsController.deletePlaylist);
 
 module.exports = { playlistsRouter };

@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const { Router } = require('express');
 usersRouter = new Router();
 const { usersController } = require('../controllers/users');
