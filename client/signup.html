@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <!--js-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>MUSIC MASTER-Sign up</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="./images/favicon.ico" alt="Music Master Logo" /></a>
+        <nav>
+            <ul>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-sign">
+            <form class="row g-3 needs-validation" action="" method="get">
+                <div class="line-box">
+                    <h1>MUSIC MASTER </h1>
+                    <h3>SIGN UP </h3>
+                </div>
+                <div class="form-box">
+
+                    <section class="form">
+                        <aside class="box-f">
+                            <section class="title"> Personal details</section>
+
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom01">Name:</section>
+                                    <input type="text" class="form-control" id="validationCustom01" required name="name"
+                                        value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        invalid !
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom04">Id:</section>
+                                    <input type="text" class="form-control" id="validationCustom04" name="id"
+                                        maxlength="10" value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        need 9 or 10 numbers!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom04">Date of birth:</section>
+                                    <input type="text" class="form-control" id="validationCustom04" name="birth"
+                                        value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        need 9 or 10 numbers!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <label>Gender:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" value="male"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            male
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" value="female"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="box-f">
+                            <section class="title"> Contact Information </section>
+
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom03">Email:</section>
+                                    <input type="email" class="form-control" id="validationCustom03" required
+                                        name="email" value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        invalid email!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom04">Phone:</section>
+                                    <input type="text" class="form-control" id="validationCustom04" name="phone"
+                                        minlength="9" maxlength="10" value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        need 9 or 10 numbers!
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </aside>
+                        <aside class="box-f">
+                            <section class="title"> User Details </section>
+
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom01">User name:</section>
+                                    <input type="text" class="form-control" id="validationCustom01" required name="user"
+                                        value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        invalid !
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3 form-group">
+                                    <section for="validationCustom04">Password:</section>
+                                    <input type="text" name="password" class="form-control" id="validationCustom04"
+                                        minlength="4" value="">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        need 9 or 10 numbers!
+                                    </div>
+                                </div>
+                            </div>
+                            <section>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3 form-group">
+                                        <section for="validationCustom08">Photo:</section>
+                                        <input type="file" class="form-control" id="inputGroupFile02" name="photo"
+                                            value="">
+
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="form-row"><input type="hidden" name="state" value=""></div>
+                        </aside>
+
+                    </section>
+                </div>
+                <div class="form">
+                    <section class="btn-btn">
+                        <a href="./profile.html"><button type="submit" class="btn btn-primary" value="">send</button></a>
+                    </section>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="ct-footer">
+        <div class="container">
+            <div class="ct-footer-meta text-center-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-2">
+                        <img alt="logo" src="images/Free_Sample_By_Wix.jpg">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <address>
+                            <span>WebCorpCo<br></span>123 Easy Street<br>
+                            Orlando, Florida, 32801<br>
+                            <span>Phone: <a href="tel:5555555555">(555) 555-8899</a></span>
+                        </address>
+                    </div>
+                    <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+                        <a href="" target="_blank"><img alt="app store" src="images/appstore.png"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+                        <a href="" target="_blank"><img alt="google play store" src="images/androidstore.png"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="ct-socials list-unstyled list-inline">
+                            <li>
+                                <a href="" target="_blank"><img alt="facebook" src="images/facebook-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="twitter" src="images/twitter-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="youtube" src="images/youtube-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="instagram" src="images/instagram-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="pinterest" src="images/pinterest-white.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ct-footer-post">
+            <div class="container">
+                <div class="inner-left">
+                    <ul>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-right">
+                    <p>
+                        Copyright © 2021 MUSICMASTER.&nbsp;<a href="">Privacy Policy</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

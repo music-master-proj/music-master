@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style_profile.css">
+
+  
+  
+    <title>MUSIC MASTER-Profile</title>
+</head>
+
+<body class="bg-light" id="top">
+
+    <header>
+
+        <a href="#"><img src="./images/favicon.ico" alt="Music Master Logo" /></a>
+        <nav>
+            <ul>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="top_artists" class="p-6 jumbotron border">
+            <section>
+                <img src="">image :
+                <span > name:</span>
+            </section>
+            <h3>Your most played artists</h3>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="container" class="col p-3">
+                        <div class="border border-primary card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{(index .TopArtists 0).ImageUrl}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{(index .TopArtists 0).Name}}</h5>
+                                <p class="card-text">{{(index .TopArtists 0).Followers}} followers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-3">
+                                    <div class="progress" style="height: 22.5px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            aria-valuenow="{{(index .TopArtists 0).Popularity}}" aria-valuemin="0"
+                                            aria-valuemax="100">Popularity</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Spotify page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container" class="col p-3">
+                        <div class="border border-primary card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{(index .TopArtists 1).ImageUrl}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{(index .TopArtists 1).Name}}</h5>
+                                <p class="card-text">{{(index .TopArtists 1).Followers}} followers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-3">
+                                    <div class="progress" style="height: 22.5px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            aria-valuenow="{{(index .TopArtists 1).Popularity}}" aria-valuemin="0"
+                                            aria-valuemax="100">Popularity</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Spotify page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container" class="col p-3">
+                        <div class="border border-primary card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{(index .TopArtists 2).ImageUrl}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{(index .TopArtists 2).Name}}</h5>
+                                <p class="card-text">{{(index .TopArtists 2).Followers}} followers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-3">
+                                    <div class="progress" style="height: 22.5px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            aria-valuenow="{{(index .TopArtists 2).Popularity}}" aria-valuemin="0"
+                                            aria-valuemax="100">Popularity</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Spotify page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container" class="col p-3">
+                        <div class="border border-primary card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{(index .TopArtists 3).ImageUrl}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{(index .TopArtists 3).Name}}</h5>
+                                <p class="card-text">{{(index .TopArtists 3).Followers}} followers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-3">
+                                    <div class="progress" style="height: 22.5px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            aria-valuenow="{{(index .TopArtists 3).Popularity}}" aria-valuemin="0"
+                                            aria-valuemax="100">Popularity</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Spotify page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container" class="col p-3">
+                        <div class="border border-primary card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{(index .TopArtists 4).ImageUrl}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{(index .TopArtists 4).Name}}</h5>
+                                <p class="card-text">{{(index .TopArtists 4).Followers}} followers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-3">
+                                    <div class="progress" style="height: 22.5px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            aria-valuenow="{{(index .TopArtists 4).Popularity}}" aria-valuemin="0"
+                                            aria-valuemax="100">Popularity</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Spotify page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+        </div>
+        <div id="top_tracks" class="p-6 jumbotron border">
+            <h3>Most played tracks</h3>
+            <div class="container-fluid">
+                <div class="row container-fluid p-3">
+                    <div class="col">
+                        <ul class="list-unstyled list-inline">
+                            <li class="media list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 0).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 0).Artist}} -
+                                            {{(index .TopSongs 0).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="media my-4 list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 1).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 1).Artist}} -
+                                            {{(index .TopSongs 1).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled list-inline">
+                            <li class="media list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 2).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 2).Artist}} -
+                                            {{(index .TopSongs 2).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="media my-4 list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 3).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 3).Artist}} -
+                                            {{(index .TopSongs 3).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled list-inline">
+                            <li class="media list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 4).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 4).Artist}} -
+                                            {{(index .TopSongs 4).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="media my-4 list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 5).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 5).Artist}} -
+                                            {{(index .TopSongs 5).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled list-inline">
+                            <li class="media list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 6).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 6).Artist}} -
+                                            {{(index .TopSongs 6).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="media my-4 list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 7).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 7).Artist}} -
+                                            {{(index .TopSongs 7).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled list-inline">
+                            <li class="media list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 8).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 8).Artist}} -
+                                            {{(index .TopSongs 8).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="media my-4 list-inline-item">
+                                <a href="#">
+                                    <figure class="figure">
+                                        <img id="image" style="max-width: 256px"
+                                            class="border border-primary rounded img-fluid"
+                                            src="{{(index .TopSongs 9).AlbumArtUrl}}">
+                                        <figcaption class="figure-caption text-center">{{(index .TopSongs 9).Artist}} -
+                                            {{(index .TopSongs 9).Name}}</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div id="top_genres" class="p-6 jumbotron border">
+            <h3>Favourite Genres</h3>
+            <br>
+
+            <ul class="list-group list-group-flush">
+                {{range .TopGenre}}
+                <li class="list-group-item">{{.}}</li>
+                {{end}}
+            </ul>
+
+
+        </div>
+
+        <div id="recommended" class="p-6 jumbotron border">
+            <h2>Based on your results, here are your recommendedations</h2>
+            <br>
+            <div class="container col-12 border card bg-light mb-3 p-3">
+                <div class="panel panel-default">
+                    <h3>Recommended Artists</h3>
+                    <p>Add all time, currently?</p>
+                    <div class="container-fluid panel-body row">
+                        <div id="container" class="col p-3">
+                            <img id="image" style="max-width: 256px; overflow: hidden;"
+                                class="border border-primary rounded img-fluid"
+                                src="{{(index .RecommendedArtists 0).ImageUrl}}">
+                            <div id="overlay">
+                                <div id="text">
+                                    <p>{{(index .RecommendedArtists 0).Name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container" class="col p-3">
+                            <img id="image" style="max-width: 256px; overflow: hidden;"
+                                class="border border-primary rounded img-fluid"
+                                src="{{(index .RecommendedArtists 1).ImageUrl}}">
+                            <div id="overlay">
+                                <div id="text">
+                                    <p>{{(index .RecommendedArtists 1).Name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container" class="col p-3">
+                            <img id="image" style="max-width: 256px; overflow: hidden;"
+                                class="border border-primary rounded img-fluid"
+                                src="{{(index .RecommendedArtists 2).ImageUrl}}">
+                            <div id="overlay">
+                                <div id="text">
+                                    <p>{{(index .RecommendedArtists 2).Name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container" class="col p-3">
+                            <img id="image" style="max-width: 256px; overflow: hidden;"
+                                class="border border-primary rounded img-fluid"
+                                src="{{(index .RecommendedArtists 3).ImageUrl}}">
+                            <div id="overlay">
+                                <div id="text">
+                                    <p>{{(index .RecommendedArtists 3).Name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container" class="col p-3">
+                            <img id="image" style="max-width: 256px; overflow: hidden;"
+                                class="border border-primary rounded img-fluid"
+                                src="{{(index .RecommendedArtists 4).ImageUrl}}">
+                            <div id="overlay">
+                                <div id="text">
+                                    <p>{{(index .RecommendedArtists 4).Name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Recommended Tracks</h3>
+                    <p>Add all time, currently?</p>
+                    <div class="row container-fluid p-3">
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li class="media">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 0).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 0).Name}}</h5>
+                                            {{(index .RecommendedSongs 0).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="media my-4">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 1).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 1).Name}}</h5>
+                                            {{(index .RecommendedSongs 1).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="media">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 2).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 2).Name}}</h5>
+                                            {{(index .RecommendedSongs 2).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li class="media">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 3).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 3).Name}}</h5>
+                                            {{(index .RecommendedSongs 3).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="media my-4">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 4).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 4).Name}}</h5>
+                                            {{(index .RecommendedSongs 4).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="{{(index .RecommendedSongs 5).SongUrl}}">
+                                    <li class="media">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 5).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 5).Name}}</h5>
+                                            {{(index .RecommendedSongs 5).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li class="media">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 6).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 6).Name}}</h5>
+                                            {{(index .RecommendedSongs 6).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="media my-4">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 7).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 7).Name}}</h5>
+                                            {{(index .RecommendedSongs 7).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="media">
+                                        <img class="align-self-center mr-3"
+                                            src="{{(index .RecommendedSongs 8).AlbumArtUrl}}" style="max-width: 128px"
+                                            alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1 pt-2">{{(index .RecommendedSongs 8).Name}}</h5>
+                                            {{(index .RecommendedSongs 8).Artist}}
+                                        </div>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+            <div class="card text-center p-4">
+                <div class="card-body">
+                    <h4 class="card-title">Like the results?</h4>
+                    <p class="card-text">Create a playlist based off of these results!</p>
+                    <a href="#" class="btn btn-primary">Create a playlist!</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="ct-footer">
+        <div class="container">
+            <div class="ct-footer-meta text-center-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-2">
+                        <img alt="logo" src="images/Free_Sample_By_Wix.jpg">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <address>
+                            <span>WebCorpCo<br></span>123 Easy Street<br>
+                            Orlando, Florida, 32801<br>
+                            <span>Phone: <a href="tel:5555555555">(555) 555-8899</a></span>
+                        </address>
+                    </div>
+                    <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+                        <a href="" target="_blank"><img alt="app store" src="images/appstore.png"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+                        <a href="" target="_blank"><img alt="google play store" src="images/androidstore.png"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="ct-socials list-unstyled list-inline">
+                            <li>
+                                <a href="" target="_blank"><img alt="facebook" src="images/facebook-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="twitter" src="images/twitter-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="youtube" src="images/youtube-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="instagram" src="images/instagram-white.png"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img alt="pinterest" src="images/pinterest-white.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ct-footer-post">
+            <div class="container">
+                <div class="inner-left">
+                    <ul>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-right">
+                    <p>
+                        Copyright © 2021 MUSICMASTER.&nbsp;<a href="">Privacy Policy</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

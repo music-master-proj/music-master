@@ -7,7 +7,6 @@ const port = process.env.PORT || 3000;
  const { playlistsRouter } = require('./routers/playlists');
  const { usersRouter } = require('./routers/users');
 
-
 app.use(express.json());
 app.use(express.urlencoded({
   extended: false
