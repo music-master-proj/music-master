@@ -1,5 +1,6 @@
 //Logic
 const mongoose = require('mongoose');
+const constants = require('../constants');
 const {
     Playlist
 } = require('../models/playlists');
@@ -54,6 +55,15 @@ exports.playlistsController = {
             image
         });
 
+            const name = req.body.name;
+             let options = {
+                method: 'GET',
+                url: `${config.URL_ID}/${name}`,
+            headers: {
+                'x-rapidapi-key': constants.X_KEY,
+                'x-rapidapi-host': constants.X_HOST
+            }
+
         playlist.save().then(() => {
             res.status(200).json({
                 message: 'Create a new playlist'
@@ -104,12 +114,49 @@ exports.playlistsController = {
 
     },
 
+    // audioApi:( req, res) => {
+    //     let check;
+    //     const name = req.body.name;
+    //     let options = {
+    //         method: 'GET',
+    //         url: `${config.URL_ID}/${name}`,
+    //     headers: {
+    //         'x-rapidapi-key': constants.X_KEY,
+    //         'x-rapidapi-host': constants.X_HOST
+    //     }
+    //     };
+    //     await axios.request(options).then(function(response) {
+    //         const data = response.data;
+    //         const id = data.titles[0].id;
+    //         test = id;
+    //     }).catch(function(error){
+    //         console.log(error);
+    //     });
+    //     let options2 = {
+    //         method: 'GET',
+    //         url: `${config.URL_FILM}/${check}`,
+    //         headers: {
+    //             'x-rapidapi-key': constants.X_KEY,
+    //             'x-rapidapi-host': constants.X_HOST
+    //         }
+    //     };
+    //     await axios.request(options2).then(function(response) {
+    //         const data = response.data;
+    //         return res.status(200).json({ data });
+    //     }).catch(function(error) {
+           
+    //     });
+      
+    // },
+
+
     madeForYouPlaylist: (req, res) => {
 
         const playlist = Playlist.find();
         const playlistBySurvey = [];
         let counter = 0;
 
+//names of client - qus
         const typeOfQuestion = {
             beatles: req.body.beatles,
             parents: req.body.parents,
