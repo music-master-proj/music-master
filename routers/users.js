@@ -1,10 +1,11 @@
-const mongoose = require('mongoose');
-const { Router } = require('express');
-usersRouter = new Router();
-const { usersController } = require('../controllers/users');
 
-usersRouter
-    .post('/signup', usersController.signup)
-    .post('/login', usersController.login);
-  
-module.exports = { usersRouter };
+const express = require('express');
+const { getAllUsers, getUser,checkId } = require('../controllers/users');
+let router = express.Router();
+
+router.get('/users/', getAllUsers);
+router.get('/users/:id', checkId ,getUser)
+      //.put('/api/users/:id',checkId ,updateUser)
+      //.delete('/api/users/:id', checkId ,deleteUser);
+
+module.exports = router;
