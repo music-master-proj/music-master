@@ -94,3 +94,23 @@
 
 2021.12.21, 23:53:06.0990 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
 
+2021.12.22, 21:03:04.0452 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 04:49:39.0459 UTC -> Error : The email is invalid
+
+2021.12.23, 04:49:54.0585 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 04:55:42.0794 UTC -> Error : The email is invalid
+
+2021.12.23, 05:24:36.0093 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 05:25:08.0531 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 05:28:27.0005 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 09:15:33.0163 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 09:22:27.0662 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.23, 09:22:44.0626 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+

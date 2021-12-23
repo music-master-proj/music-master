@@ -4,10 +4,13 @@ main {
   }
   body {
     color: #fff5f5;
-    font-family: "Signika", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shippori Antique', sans-serif;
     margin: 0;
     box-sizing: border-box;
     background-color: #1a1a1a;
+    
   }
   header {
     position: fixed;
@@ -29,7 +32,7 @@ main {
   }
   
  main h3{
-   color: #fff;
+   color: rgb(0, 0, 0)
  }
   
   header ul {
@@ -37,6 +40,7 @@ main {
     padding: 0;
     margin: 0;
     display: inline;
+    
   }
   
   header ul li {
@@ -50,18 +54,36 @@ main {
   }
 
   #top_artists,#top_tracks,#top_genres,#recommended{
-    background-image: url(../images/party.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;}
-
+ 
+border-image:none ;
+    background: linear-gradient(-45deg, #cec7c4, #a19b9d, #363533, #252523);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-image: none;
+	/* height: 100vh; */
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
     #recommended{
-      margin-bottom: 0px;
-      border-radius: 0px;
+    background: linear-gradient(-45deg, #cec7c4, #a19b9d, #363533, #252523);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-image: none;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-image: none;
     }
-
-
 
 
 
@@ -151,6 +173,8 @@ footer{
   }
  .card{
    color: black;
+   border:none;
+   border-color: #fff;
  } 
   
   address {

@@ -62,12 +62,12 @@ main {
      color: rgb(0, 0, 0);
      margin-top: 20px;
      padding-top: 20px;
-     background-image: url(../images/woman.jpg);
+     /* background-image: url(../images/woman.jpg); */
+     background-color: #fff;
      background-size: cover;
-     border-radius: 40px;
 }
 .woman{
-    background-image: url(../images/woman.jpg);
+    /* background-image: url(../images/woman.jpg); */
     background-size: cover; 
     width: 200px;
     height: 200px;
@@ -98,7 +98,7 @@ main {
 }
 
 form{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(204, 197, 197);
 }
 .form-box {
     display: flex;
@@ -106,9 +106,11 @@ form{
     margin-top: 50px;
     margin-left: 20px;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 25px;
     width: 100%;
+  
 }
+
 .title{
     font-size: large;
     font-weight: bolder;
@@ -125,7 +127,7 @@ form{
     width: 100% !important;
 }
 .col-md-4 label{
-    color: wheat;    
+    color: rgb(0, 0, 0);    
 }
 .form-row section {
     width: 100%;

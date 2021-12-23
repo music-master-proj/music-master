@@ -106,41 +106,7 @@ exports.playlistsController = {
 
     },
 
-    // audioApi:( req, res) => {
-    //     let check;
-    //     const name = req.body.name;
-    //     let options = {
-    //         method: 'GET',
-    //         url: `${config.URL_ID}/${name}`,
-    //     headers: {
-    //         'x-rapidapi-key': constants.X_KEY,
-    //         'x-rapidapi-host': constants.X_HOST
-    //     }
-    //     };
-    //     await axios.request(options).then(function(response) {
-    //         const data = response.data;
-    //         const id = data.titles[0].id;
-    //         test = id;
-    //     }).catch(function(error){
-    //         console.log(error);
-    //     });
-    //     let options2 = {
-    //         method: 'GET',
-    //         url: `${config.URL_FILM}/${check}`,
-    //         headers: {
-    //             'x-rapidapi-key': constants.X_KEY,
-    //             'x-rapidapi-host': constants.X_HOST
-    //         }
-    //     };
-    //     await axios.request(options2).then(function(response) {
-    //         const data = response.data;
-    //         return res.status(200).json({ data });
-    //     }).catch(function(error) {
-           
-    //     });
-      
-    // },
-
+  
 
     madeForYouPlaylist: (req, res) => {
 

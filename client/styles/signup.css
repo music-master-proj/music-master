@@ -74,7 +74,7 @@ main {
 }
  .form-sign{
     padding-top: 20px;
-    background-image: url(../images/woman.jpg);
+    /* background-image: url(../images/woman.jpg); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
