@@ -32,7 +32,7 @@ const signup = async function (req, res) {
         let newUser = new User({ _id: mongoose.Types.ObjectId(),  user_name: req.body.user_name, password: bcrypt.hashSync(req.body.password, 10), email: req.body.email });
         const user = await User.findOne({ user_name: newUser.user_name });
         if (!user) {
-            newUser.save();
+            await newUser.save();
             return res.status(200).json({ newUser });
         }
     }
@@ -68,6 +68,7 @@ const login = async function (req, res) {
         return res.status(401).json({ message });
     }
 };
+
 module.exports = {checkEmail, signup, login};
 
 

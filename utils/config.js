@@ -9,6 +9,8 @@ const config = {
     DB_USER: process.env.DB_USER,
     DB_PASS: process.env.DB_PASS,
     OPTIONS: process.env.options,
+    ALBUM_API:process.env.SearchAlbumApi,
+    SONG_API:process.env.SearchSongApi,
     URL_API: process.env.URL_API,
     X_KEY: process.env.xrapidapikey,
     X_HOST: process.env.xrapidapihost,

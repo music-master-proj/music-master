@@ -1,343 +1,106 @@
 //Logic
 const mongoose = require('mongoose');
-const constants = require('../constants');
-const {
-    Playlist
-} = require('../models/playlists');
+const logger = require('../utils/logs');
+const config = require('../utils/config');
+const axios = require("axios").default;
 
+let playlist = new Array();
+const counter = 0;
+let obj = new Object();
 
+const Spotify = async function (req, res) {
 
-exports.playlistsController = {
-    getAllPlaylists: (req, res) => {
-        Playlist.find().then((Playlist) => {
-            res.status(200).json({
-                Playlist
-            }).catch(error => {
-                res.status(500).json({
-                    error
-                })
-            });
-        })
-    },
-
-    getOnePlaylist: (req, res) => {
-        const playlistId = req.params.playlistId;
-
-        Playlist.findById(playlistId).then((Playlist) => {
-            res.status(200).json({
-                Playlist
-            }).catch(error => {
-                res.status(500).json({
-                    error
-                })
-            });
-        })
-    },
-
-    createPlaylist: (req, res) => {
-        const {
-            name,
-            artist,
-            yearReleased,
-            duration,
-            writer,
-            genre,
-            image
-        } = req.body;
-        const playlist = new Playlist({
-            _id: new mongoose.Types.ObjectId(), //this line create string  of playlist
-            name,
-            artist,
-            yearReleased,
-            duration,
-            writer,
-            genre,
-            image
-        });
-
-      
-        playlist.save().then(() => {
-            res.status(200).json({
-                message: 'Create a new playlist'
-            })
-        }).catch(error => {
-            res.status(500).json({
-                error
-            })
-        });
-
-    },
-
-    updatePlaylist: (req, res) => {
-        const playlistId = req.params.playlistId
-
-        Playlist.update({
-            _id: playlistId
-        }, req.body).then(() => {
-            res.status(200).json({
-                message: 'Playlist Updated'
-            })
-        }).catch(error => {
-            res.status(500).json({
-                error
-            })
-        });
-
-
-        res.status(200).json({
-            message: `Update playlist - ${playlistId}`
-        })
-    },
-
-    deletePlaylist: (req, res) => {
-        const playlistId = req.params.playlistId
-        playlist.remove({
-            _id: playlistId
-        }).then(() => {
-            res.status(200).json({
-                message: `Playlist id: ${ playlistId } deleted`
-            })
-        }).catch(error => {
-            res.status(500).json({
-                error
-            })
-        });
-
-
-    },
-
-  
-
-    madeForYouPlaylist: (req, res) => {
-
-        const playlist = Playlist.find();
-        const playlistBySurvey = [];
-        let counter = 0;
-
-//names of client - qus
-        const typeOfQuestion = {
-            beatles: req.body.beatles,
-            parents: req.body.parents,
-            date: req.body.date,
-            genre: req.body.genre,
-            breaksUp: req.body.breaksUp,
-            engagement: req.body.engagement
-        };
-
-        const beatles = String(typeOfQuestion.beatles);
-        const parents = String(typeOfQuestion.parents);
-        const date = String(typeOfQuestion.date);
-        const genre = String(typeOfQuestion.genre);
-        const breaksUp = String(typeOfQuestion.breaksUp);
-        const engagement = String(typeOfQuestion.engagement);
-
-        //Bring random album and then track of Sci-Fi
-        //1
-        if (beatles == "Yes") {
-            const beatlesTracks = [];
-            counter++;
-            playlist.forEach(playlist => {
-                playlist.genre.forEach(genre => {
-                    if (genre.includes("Sci-Fi")) {
-                        beatlesTracks.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "genre": playlist.writer
-                        });
-                        playlistBySurvey.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "writer": playlist.writer,
-                            "genre": playlist.director
-                        });
-                    }
-                });
-            });
-        } else {
-            const favList = [];
-            playlist.forEach(playlist => {
-                playlist.genre.forEach(genre => {
-                    if (genre.includes(favList)) {
-                        favList.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "writer": playlist.writer,
-                            "genre": playlist.director
-                        });
-                    }
-                });
-            });
-            const item = favList[Math.floor(Math.random() * favList.length)];
-            return res.status(200).json({
-                item
-            });
-
-        }
-
-        // 2
-        if (parents == "Jennifer lopez" || "Kanye West" || "Justin Timberlake "){
-            const parentsTracks = [];
-            counter++;
-            playlist.forEach(playlist => {
-                playlist.genre.forEach(genre => {
-                    if (genre.includes("Sci-Fi")) {
-                        parentsTracks.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "genre": playlist.writer
-                        });
-                        playlistBySurvey.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "writer": playlist.writer,
-                            "genre": playlist.director
-                        });
-                    }
-                });
-            });
-        } else { const favList = [];
-            playlist.forEach(playlist => {
-                playlist.genre.forEach(genre => {
-                    if (genre.includes(favList)) {
-                        favList.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "writer": playlist.writer,
-                            "genre": playlist.director
-                        });
-                    }
-                });
-            });
-            const item = favList[Math.floor(Math.random() * favList.length)];
-            return res.status(200).json({
-                item
-            });
-        }
-        //3
-       if(date == "Enrique Iglesias" || "Axl Rose" || "Bob Marley "){
-        const dateTracks = [];
-        counter++;
-        playlist.forEach(playlist => {
-            playlist.genre.forEach(genre => {
-                if (genre.includes("Sci-Fi")) {
-                    parentsTracks.push({
-                        "id": playlist.id,
-                        "name": playlist.name,
-                        "artist": playlist.artist,
-                        "yearReleased": playlist.yearReleased,
-                        "writer": movie.writer,
-                        "genre": playlist.writer
-                    });
-                    playlistBySurvey.push({
-                        "id": playlist.id,
-                        "name": playlist.name,
-                        "artist": playlist.artist,
-                        "yearReleased": playlist.yearReleased,
-                        "writer": movie.writer,
-                        "writer": playlist.writer,
-                        "genre": playlist.director
-                    });
-                }
-            });
-        });
-    } else { const favList = [];
-        playlist.forEach(playlist => {
-            playlist.genre.forEach(genre => {
-                if (genre.includes(favList)) {
-                    favList.push({
-                        "id": playlist.id,
-                        "name": playlist.name,
-                        "artist": playlist.artist,
-                        "yearReleased": playlist.yearReleased,
-                        "writer": movie.writer,
-                        "writer": playlist.writer,
-                        "genre": playlist.director
-                    });
-                }
-            });
-        });
-        const item = favList[Math.floor(Math.random() * favList.length)];
-        return res.status(200).json({
-            item
-        });
+    const BeatlesAns = String(req.body.vals.Beatles);
+    const ParentsAns = String(req.body.vals.Parents);
+    const DateAns = String(req.body.vals.Date);
+    const GenereAns = String(req.body.vals.Genere);
+    const ComfortAns = String(req.body.vals.Comfort);
+    const BreaksAns = String(req.body.vals.Breaks);
+    const EngagementsAns = String(req.body.vals.Engagement);
+    if (BeatlesAns == "Yes") {
+        await GetArtistAlbum("beatles");
     }
-        //4
-        if (genre == "Latin" || "Rock" || "Hip Hop"){
-            const genreTracks = [];
-            counter++;
-            playlist.forEach(playlist => {
-                playlist.genre.forEach(genre => {
-                    if (genre.includes("Sci-Fi")) {
-                        genreTracks.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "genre": playlist.writer
-                        });
-                        playlistBySurvey.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "writer": playlist.writer,
-                            "genre": playlist.director
-                        });
-                    }
-                });
-            });
-        } else { const favList = [];
-            playlist.forEach(playlist => {
-                playlist.genre.forEach(genre => {
-                    if (genre.includes(favList)) {
-                        favList.push({
-                            "id": playlist.id,
-                            "name": playlist.name,
-                            "artist": playlist.artist,
-                            "yearReleased": playlist.yearReleased,
-                            "writer": movie.writer,
-                            "writer": playlist.writer,
-                            "genre": playlist.director
-                        });
-                    }
-                });
-            });
-            const item = favList[Math.floor(Math.random() * favList.length)];
-            return res.status(200).json({
-                item
-            });
-        }
-        //5
-        if (breaksUp == "Amy Winehouse -Back to Black" || "Sam Smith - I'm Not The Only One" || "Beyoncé -Irreplaceable "){
-
-        }
-        //6
-        if (engagement == "Ed Sheeran" || "Ricky Martin" || "Aerosmith"){
-
-        }
-       }
-      
-
-
+    else {
+        await GetArtistAlbum("elton john");
     }
-   
+    await GetArtistAlbum(ParentsAns);
+    await GetArtistAlbum(DateAns);
+    await GetArtistAlbum(ComfortAns);
+    await GetArtistAlbum(BreaksAns);
+    await GetArtistAlbum(EngagementsAns);
+
+    if (GenereAns == "Latin") {
+        await GetArtistAlbum("maluma");
+    }
+    else if (GenereAns == "Rock") {
+        await GetArtistAlbum("aerosmith");
+    }
+    else {
+        await GetArtistAlbum("drake");
+    }
+    console.log(playlist);
+    return await res.status(200).json({playlist });
+
+}
+
+async function GetArtistAlbum(name) {
+    let options = {
+        method: 'GET',
+        url: config.ALBUM_API,
+        params: { s: name },
+        headers: {
+            'x-rapidapi-host': config.X_HOST,
+            'x-rapidapi-key': config.X_KEY
+        }
+    };
+    await axios.request(options).then(function (response) {
+        const data = response.data;
+        const numOfAlbums = data.album.length;
+        const RandAlubmNum = Math.floor(Math.random() * numOfAlbums);
+        const ArtistName = data.album[RandAlubmNum].strArtist;
+        const AlbumID = data.album[RandAlubmNum].idAlbum;
+        const genre = data.album[RandAlubmNum].strGenre;
+        const img = data.album[RandAlubmNum].strAlbumThumb;
+        const yearReleased = data.album[RandAlubmNum].intYearReleased;
+        const albumName = data.album[RandAlubmNum].strAlbum;
+        obj.ArtistName = ArtistName;
+        obj.genre = genre;
+        obj.img = img;
+        obj.yearReleased = yearReleased;
+        obj.albumName = albumName;
+        GetSongFromAlbum(AlbumID);
+
+    }).catch(function (error) {
+        logger.error(error);
+    });
+}
+
+async function GetSongFromAlbum(AlbumId) {
+    let options = {
+        method: 'GET',
+        url: config.SONG_API,
+        params: { m: AlbumId },
+        headers: {
+            'x-rapidapi-host': config.X_HOST,
+            'x-rapidapi-key': config.X_KEY
+        }
+    };
+    await axios.request(options).then(function (response) {
+        const data = response.data;
+        const numOfAlbums = data.track.length;
+        const RandTrackNum = Math.floor(Math.random() * numOfAlbums);
+        const songName = data.track[RandTrackNum].strTrack;
+        obj.songName = songName;
+        const json = JSON.stringify(obj);
+        playlist.push(json);
+    }).catch(function (error) {
+        logger.error(error);
+    });
+}
+
+module.exports = { Spotify };
+
+
+
+
+

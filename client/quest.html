@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <!--js-->
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>Music Master - Made for you Playlist</title>
@@ -29,7 +30,7 @@
     </header>
     <main>
         <section class="form-sign">
-            <form class="row g-3 needs-validation" action="" method="get">
+            <form class="row g-3 needs-validation" id="Test" action="" method="get">
                 <div class="line-box">
                     <h1>Music Master</h1>
                     <h3>Made for you Playlist Survey</h3>
@@ -40,14 +41,14 @@
                             <div class="col-md-4 mb-3 form-group">
                                 <label>if you had the opportunity to go back in time, would you go to the Beatles concert?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="stuck" value="Despacito"
+                                    <input class="form-check-input" type="radio" name="Beatles" value="Yes"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="stuck" value="Uptown"
+                                    <input class="form-check-input" type="radio" name="Beatles" value="No"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         No
@@ -59,21 +60,21 @@
                             <div class="col-md-4 mb-3 form-group">
                                 <label>Who would you bring home to your parents?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="bad-ass" value="Army"
+                                    <input class="form-check-input" type="radio" name="Parents" value="Jennifer Lopez"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
-                                        Jennifer lopez
+                                        Jennifer Lopez
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="bad-ass" value="Thriller"
+                                    <input class="form-check-input" type="radio" name="Parents" value="Kanye West"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Kanye West
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="bad-ass" value="Dancing"
+                                    <input class="form-check-input" type="radio" name="Parents" value="Justin Timberlake"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Justin Timberlake
@@ -87,24 +88,24 @@
                             <div class="col-md-4 mb-3 form-group">
                                 <label>Who Would you like to go on a date with?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="date" value="Enrique"
+                                    <input class="form-check-input" type="radio" name="Date" value="Enrique Iglesias"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Enrique Iglesias
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="date" value="Harry"
+                                    <input class="form-check-input" type="radio" name="Date" value="Bob Marley"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Bob Marley
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="date" value="Axl"
+                                    <input class="form-check-input" type="radio" name="Date" value="Eminem"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Axl Rose
+                                        Eminem
                                     </label>
                                 </div>
                             </div>
@@ -115,21 +116,21 @@
                             <div class="col-md-4 mb-3 form-group">
                                 <label>What genere do you like?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="shower" value="Levitating"
+                                    <input class="form-check-input" type="radio" name="Genere" value="Latin"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Latin
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="shower" value="Wannabe"
+                                    <input class="form-check-input" type="radio" name="Genere" value="Rock"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Rock
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="shower" value="Stayin"
+                                    <input class="form-check-input" type="radio" name="Genere" value="Hip-Hop"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Hip Hop
@@ -143,24 +144,24 @@
                             <div class="col-md-4 mb-3 form-group">
                                 <label>When he/she breaks up with you which song will comfort you</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="somewhere" value="Empire"
+                                    <input class="form-check-input" type="radio" name="Comfort" value="Amy Winehouse"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
-                                        Amy Winehouse -Back to Black 
+                                        Amy Winehouse 
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="somewhere" value="Waka"
+                                    <input class="form-check-input" type="radio" name="Comfort" value="Sam Smith"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Sam Smith - I'm Not The Only One
+                                        Sam Smith
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="somewhere" value="Take"
+                                    <input class="form-check-input" type="radio" name="Comfort" value="Beyonce"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Beyoncé -Irreplaceable
+                                        Beyonce
                                     </label>
                                 </div>
                                
@@ -170,24 +171,24 @@
                             <div class="col-md-4 mb-3 form-group">
                                 <label>When he breaks up with you...</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="breaks" value="Shaggy"
+                                    <input class="form-check-input" type="radio" name="Breaks" value="Shaggy"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
-                                        Shaggy - It Wasn't Me
+                                        Shaggy
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="breaks" value="Smith"
+                                    <input class="form-check-input" type="radio" name="Breaks" value="Sam Smith"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Sam Smith - I'm Not The Only One
+                                        Sam Smith
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="breaks" value="Smith"
+                                    <input class="form-check-input" type="radio" name="Breaks" value="Passenger"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Rafaga Mentirosa Letra
+                                        Passenger
                                     </label>
                                 </div>
                             </div>
@@ -199,28 +200,28 @@
                                 <label>Which of the following would you bring to sing for you on your Engagement proposal?
                                 </label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="move" value="Technotronic"
+                                    <input class="form-check-input" type="radio" name="Engagement" value="Ed Sheeran"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Ed Sheeran
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="move" value="Gettin"
+                                    <input class="form-check-input" type="radio" name="Engagement" value="Will Smith"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Will Smith - Gettin' Jiggy Wit It
+                                        Will Smith
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="move" value="Rock"
+                                    <input class="form-check-input" type="radio" name="Engagement" value="Ricky Martin"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Ricky Martin
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="move" value="Rock"
+                                    <input class="form-check-input" type="radio" name="Engagement" value="Aerosmith"
                                         id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Aerosmith
@@ -230,10 +231,7 @@
 
                             <div class="form">
                                 <section class="btn-btn">
-                                    <a href="./profile.html"><button type="submit" class="btn btn-primary"
-                                            value="">send</button></a><div class="woman">
-                                
-                                            </div>
+                                    <button id="Submit" type="submit" class="btn btn-primary" value="">send</button>
                                 </section>
                             </div>
                     </section>
@@ -241,6 +239,9 @@
             </form>
         </section>
     </main>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="js/ConectionClientServer.js"></script>
+
 </body>
 
 </html>

@@ -114,3 +114,239 @@
 
 2021.12.23, 09:22:44.0626 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
 
+2021.12.24, 15:10:31.0549 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:17:22.0971 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:42:44.0824 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:44:04.0596 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:46:39.0722 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:48:55.0574 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:50:24.0223 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:51:37.0553 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:52:14.0468 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:52:39.0882 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:53:23.0537 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:54:52.0935 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:55:56.0800 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:58:26.0643 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 15:59:05.0955 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:01:56.0502 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:05:44.0104 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:06:13.0700 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:08:47.0147 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:08:59.0160 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:09:38.0437 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:09:59.0030 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:11:52.0974 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.24, 16:13:29.0664 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.12.24, 16:13:56.0931 UTC -> Error : Error - User not exists
+
+2021.12.24, 16:14:24.0476 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:15:51.0984 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 16:23:07.0552 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.12.24, 18:26:10.0975 UTC -> Error : req.body.name
+
+2021.12.24, 18:26:10.0976 UTC -> Error : req.body.name
+
+2021.12.24, 18:27:01.0287 UTC -> Error : req.body.name
+
+2021.12.24, 18:27:01.0288 UTC -> Error : req.body.name
+
+2021.12.24, 18:28:41.0092 UTC -> Error : req.body.name
+
+2021.12.24, 18:28:41.0098 UTC -> Error : req.body.name
+
+2021.12.24, 18:29:19.0957 UTC -> Error : req.body.name
+
+2021.12.24, 18:29:19.0959 UTC -> Error : req.body.name
+
+2021.12.24, 18:29:41.0525 UTC -> Error : req.body.name
+
+2021.12.24, 18:29:41.0527 UTC -> Error : req.body.name
+
+2021.12.24, 18:31:53.0261 UTC -> Error : req.body.name
+
+2021.12.24, 18:31:53.0263 UTC -> Error : req.body.name
+
+2021.12.24, 19:00:25.0979 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:03:28.0994 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:03:51.0051 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:04:26.0657 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:09:24.0051 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:11:03.0984 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:11:37.0958 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:13:00.0549 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:14:53.0805 UTC -> Error : 'https://theaudiodb.p.rapidapi.com/searchalbum.php'
+
+2021.12.24, 19:14:53.0817 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:16:09.0574 UTC -> Error : 'https://theaudiodb.p.rapidapi.com/searchalbum.php'
+
+2021.12.24, 19:16:09.0595 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:17:00.0659 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:19:22.0206 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:20:02.0552 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:22:39.0444 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:23:05.0819 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:27:01.0397 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:27:50.0616 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:31:24.0542 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:34:13.0092 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:40:21.0568 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:40:21.0582 UTC -> Error : Error: connect ECONNREFUSED 127.0.0.1:80
+
+2021.12.24, 19:41:43.0683 UTC -> Error : undefined
+
+2021.12.24, 19:42:10.0090 UTC -> Error : undefined
+
+2021.12.24, 19:42:50.0680 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:43:41.0893 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:45:41.0511 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:46:16.0124 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:46:56.0257 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 19:59:19.0568 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:15:41.0629 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:21:35.0247 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:38:07.0411 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:38:07.0980 UTC -> Error : ReferenceError: playlist is not defined
+
+2021.12.24, 20:38:37.0494 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:38:38.0033 UTC -> Error : TypeError: Cannot set property 'undefined' of undefined
+
+2021.12.24, 20:39:08.0692 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:39:09.0303 UTC -> Error : TypeError: Cannot set property 'undefined' of undefined
+
+2021.12.24, 20:39:34.0686 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:39:35.0229 UTC -> Error : TypeError: Cannot set property 'undefined' of undefined
+
+2021.12.24, 20:40:32.0644 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:40:33.0279 UTC -> Error : TypeError: Cannot set property 'undefined' of undefined
+
+2021.12.24, 20:41:07.0756 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:41:08.0535 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:42:49.0189 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:42:49.0729 UTC -> Error : ReferenceError: Cannot access 'numOfAlbums' before initialization
+
+2021.12.24, 20:42:50.0024 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:43:25.0295 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:43:25.0831 UTC -> Error : ReferenceError: Cannot access 'numOfAlbums' before initialization
+
+2021.12.24, 20:43:26.0117 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:44:01.0812 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:44:02.0696 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:44:19.0745 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:44:20.0243 UTC -> Error : TypeError: Cannot set property 'Dance For You' of undefined
+
+2021.12.24, 20:44:20.0522 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:44:42.0225 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:44:42.0756 UTC -> Error : TypeError: Cannot set property 'albumName' of undefined
+
+2021.12.24, 20:44:43.0053 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:45:54.0682 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:45:55.0418 UTC -> Error : TypeError: Cannot set property 'albumName' of undefined
+
+2021.12.24, 20:45:56.0596 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:51:51.0302 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:51:52.0205 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:52:28.0950 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:52:29.0797 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:59:41.0481 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:59:42.0376 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 20:59:55.0786 UTC -> Error : https://theaudiodb.p.rapidapi.com/searchalbum.php
+
+2021.12.24, 20:59:56.0796 UTC -> Error : TypeError: Cannot read property 'strTrack' of undefined
+
+2021.12.24, 21:34:54.0263 UTC -> Error : TypeError: Assignment to constant variable.
+
+2021.12.24, 21:34:54.0744 UTC -> Error : TypeError: Assignment to constant variable.
+
+2021.12.24, 21:36:59.0648 UTC -> Error : TypeError: Assignment to constant variable.
+
+2021.12.24, 21:37:00.0066 UTC -> Error : TypeError: Assignment to constant variable.
+
+2021.12.24, 22:07:13.0267 UTC -> Error : TypeError: Cannot read property 'length' of null
+
+2021.12.24, 22:07:13.0945 UTC -> Error : TypeError: Cannot read property 'length' of null
+
+2021.12.24, 22:08:51.0759 UTC -> Error : TypeError: Cannot read property 'length' of null
+
+2021.12.24, 22:11:54.0495 UTC -> Error : TypeError: Cannot read property 'length' of null
+
