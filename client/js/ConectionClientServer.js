@@ -48,39 +48,11 @@ function getQuestAns(){
         dataType : 'json',
         success: function(playlist) {
 
-            //console.log(JSON.stringify(movie.name));
-            // console.log(movie.item.name);
-            // console.log(movie.item.categories);
-            // console.log(movie.item.id);
-            // sendIdToMovie(movie.item.id);
              top.location.href="madeforyou.html";
             
-             // getIMDB(movie.item.name);
-            // const data = JSON.parse(localStorage.getItem(movie.item.name));
-            
-            //  $("img1").empty();
-            // $("img1").append(data.data.title +" - Movie");
-            // $("#movie").empty();
-            // $("#movie").append(
-            //     "<section id='movie-image'>" + 
-            //     "<img src='" + data.data.poster + "'></section>"+
-            //     "<div id='movie-details'><navbar class='movie-left'><ul>"+
-            //     "<li><label>Name</label> : <span class='movie-name'>" + data.data.title + "</span></li>" +
-            //     "<li><label>Time</label> : <span>"+data.data.length+"</span></li>" +
-            //     " <li><label>Year</label> : <span>"+data.data.year+"</span></li>" +
-            //     "<li><label>Rate</label> : <span>"+data.data.rating+"</span></li></ul></navbar>" +
-            //     "<aside class='movie-right'><ul>"+       
-            //     "<li><label>Categories</label> : <span>"+movie.item.categories+"</span></li>"+
-            //     "<li><label>Actors</label> : <span>"+movie.item.actors+"</span></li>"+ 
-            //     "<li><label>Writer</label> : <span>"+movie.item.writer+"</span></li>"+ 
-            //     "<li><label>Director</label> : <span>"+movie.item.director+"</span></li></ul></aside>"+ 
-            //     "<br>"+
-            //     "<br>"+
-            //     "<p><label>Story Line</label> : <span>"+data.data.plot+"</span></p></div>"
-            // );
+           
         },  
         error:function(jqXHR, textStatus, message){  
-            //$('.error-box').append(`<h2>errors</h2><p>`+message+`</p>`);
         }
     })   
 }
