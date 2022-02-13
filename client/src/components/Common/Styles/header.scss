@@ -1,0 +1,17 @@
+.navbarContainer {
+  background-color: #fff;
+  
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  .navLinkText {
+    text-align: right;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 16px;
+    &:hover {
+      color: var(--theme-navbarColor);
+    }
+  }
+}
