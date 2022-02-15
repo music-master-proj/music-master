@@ -1,0 +1,59 @@
+.questForm {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  .questTitleContainer {
+    color: #000000;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-image: url("http://localhost:3000/assets/images/woman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+  }
+  .formContainer {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-weight: 800;
+    font-size: 16px;
+    .formRow {
+      margin: 30px;
+      .formCol {
+        label {
+          &:first-child {
+            color: wheat;
+            font-size: 20px;
+          }
+        }
+      }
+      .form-check-input {
+        background-color: rgb(255, 255, 255) !important;
+        line-height: 2;
+        &:checked {
+          background-color: rgb(218, 142, 1) !important;
+          border-color: rgb(184, 104, 0) !important;
+        }
+      }
+
+      .form-check-label {
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+}
+.submitBtn {
+  background-color: black !important;
+  border-color: #fff !important;
+  border-radius: 20px !important;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+}
+.bottomImg {
+  width: 40%;
+  height: auto;
+  float: right;
+  border-radius: 5px;
+}

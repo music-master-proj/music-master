@@ -1,0 +1,81 @@
+.heroSection {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('http://localhost:3000/assets/images/landing.jpg');
+	width: 100vw;
+	max-width: 100%;
+	height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	h1 {
+		font-size: 65px;
+		font-weight: 700;
+	}
+	p {
+		font-size: 1.5em;
+		width: 550px;
+		font-weight: normal;
+		text-align: center;
+	}
+}
+
+#whatsOnMusic {
+	text-align: center;
+	margin: 25px;
+	.sectionTitle {
+		padding-bottom: 5px;
+		border-bottom: 3px solid #f0b206;
+		display: inline;
+	}
+	h3 {
+		color: #f0b206;
+		font-size: 1.5em;
+	}
+	img {
+		width: auto;
+		height: 60px;
+	}
+}
+
+#musicFeatures {
+	background-color: #f0b206;
+	color: #fff;
+	padding: 90px;
+	.featureContainer {
+		font-size: 1.1em;
+		line-height: 1.6;
+	}
+	.sectionTitle {
+		padding-bottom: 5px;
+		border-bottom: 3px solid #f0b206;
+		display: inline;
+	}
+	.sectionTitleWhite {
+		border-color: #fff;
+		font-size: 26px;
+		letter-spacing: 1.5px;
+	}
+	.musicAppImg {
+		width: 150px;
+		height: auto;
+		border-radius: 5px;
+	}
+	.musicWhiteIcon {
+		width: auto;
+		border-radius: 30px;
+		height: auto;
+	}
+}
+
+.regBtn {
+	color: #ffc107;
+	text-transform: uppercase;
+	font-weight:bolder;
+	button {
+		background-color: #ff8c00;
+	}
+}
