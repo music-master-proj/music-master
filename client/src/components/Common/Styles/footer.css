@@ -1,0 +1,82 @@
+/*footer*/
+#footer {
+	padding-top: 5rem;
+	position: absolute;
+	background-color: #111;
+	left: 0;
+	right: 0;
+}
+#footer .footerContainer {
+	padding-top: 30px;
+}
+#footer .footerContainer .footerLogo {
+	width: 100px;
+	border-radius: 30px;
+}
+#footer .footerContainer .socialIconsList {
+	padding: 20px 0;
+	display: flex;
+}
+#footer .footerContainer .socialIconsList li {
+	padding: 0 3px;
+}
+#footer .footerContainer address {
+	color: #fff;
+	display: inline-block;
+}
+#footer .footerContainer address span {
+	font-weight: 600;
+}
+#footer .footerContainer address a {
+	color: #fff;
+}
+#footer .footerContainer address a:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+	#footer .footerContainer address {
+		padding-top: 30px;
+   }
+}
+.footerBottomContainer {
+	background: #000;
+	padding: 30px 0;
+}
+.footerBottomContainer ul {
+	list-style: none;
+	padding-left: 0;
+}
+.footerBottomContainer ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.footerBottomContainer a {
+	color: #fff;
+}
+.footerBottomContainer a:hover {
+	text-decoration: underline;
+}
+.footerBottomContainer p {
+	color: #fff;
+}
+@media (min-width: 768px) {
+	.footerBottomContainer p {
+		display: inline-block;
+   }
+	.footerBottomContainer p + p {
+		padding-left: 50px;
+   }
+}
+@media (min-width: 992px) {
+	.footerBottomContainer .leftContainer {
+		float: left;
+   }
+	.footerBottomContainer .rightContainer {
+		float: right;
+   }
+}
+@media (max-width: 991px) {
+	.footerBottomContainer {
+		text-align: center;
+   }
+}
